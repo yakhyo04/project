@@ -1,0 +1,224 @@
+.header__banner{
+    width: 100%;
+    max-width: 100%;
+    height: 100vh;
+    background-image: url('../img/plpBg.png');
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    line-height: 40px;
+}
+.header__banner--container{
+    width: 87vw;
+    max-width: 100%;
+    margin: 0 auto;
+  top: 47%;
+  position: relative;
+  text-align: left;
+  /* display: flex;
+  flex-direction: column;
+  align-items: center; */
+}
+.header__banner--title{
+    width: 845px;
+    font-size: 80px;
+    font-weight: 700;
+    line-height: 90%;
+    text-transform: uppercase;
+    /* margin: 0 auto; */
+    padding: 20px 0;
+}
+.header__banner--text{
+    width: 519px;
+    font-size: 16px;
+}
+
+.router{
+    padding: 30px 0 0 0;
+}
+.router__link{
+    text-decoration: none;
+    color: #222;
+    font-size: 14px;
+    line-height: 160%;
+    font-weight: 300;
+}
+.router__link--grey{
+    color: #555;
+}
+.sorting__btn{
+    text-align: right;
+    font-size: 16px;
+    color: #222;
+    margin: 0 0 20px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.sorting__hidden{
+    display: none;
+}
+.sorting__right{
+    margin-left: auto;
+}
+
+/* Products */
+.products{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.product__bucket{
+    width: 380px;
+    margin: 0;
+    position: relative;
+}
+.product__cto{
+    width: 90%;
+    margin: 30px auto;
+    padding: 20px 0;
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+    border-top: 2px solid #fff;
+}
+.product__img--wrapper{
+    background-color:#7373D7;
+    padding: 40px 0 5px 0;
+}
+.product__details{
+    padding: 10px 0;
+}
+.product__price{
+    padding: 10px 0;
+}
+.product__label{
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    background-color: #fff;
+    /* padding: 20px; */
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    color: #7373D7;
+}
+.product__text--rich{
+    width: 770px;
+    max-width: 100%;
+    height: 496px;
+    background-image: url('../img/harlow.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-top: -78px;
+    color: #fff;
+}
+.product__hidden{
+    display: none;
+}
+.product__text--heading{
+    font-size: 40px;
+    margin: 300px 0 0 0;
+    padding: 30px;
+    text-transform: uppercase;
+}
+.product__text--desc{
+    padding: 0 30px;
+}
+.product__show{
+    width: 200px;
+    margin: auto;
+    padding: 40px 0 100px 0;
+    text-align: center;
+}
+.product__show--text{
+    font-size: 14px;
+    color: #42210B;
+    font-weight: 300;
+    margin: 0 0 30px 0;
+}
+.product__show--btn{
+    background-color: #7373D7;
+    text-decoration: none;
+    padding: 15px 30px;
+    color: #fff;
+    border-radius: 28px;
+    border: none;
+    cursor: pointer;
+}
+
+@media (max-width: 1290px){
+    .product__text--rich{
+        margin-bottom: 30px;
+    }
+    .product__text--rich{
+        margin: 0%;
+        width: 100%;
+        background-size: cover;
+    }
+}
+/* @media (max-width: 1000px){
+    .product__text--rich{
+        margin-bottom: 30px;
+    }
+} */
+
+@media (max-width: 900px){
+    .header__banner--title{
+        width: auto;
+        font-size: 60px;
+    }
+    .header__banner--btn{
+        padding: 10px 20px;
+    }
+    .product__text--heading{
+        margin: 200px 0 0 0;
+    }
+    .sorting__hidden{
+        display: block;
+    }
+    .product__bucket{
+        margin: auto;
+    }
+}
+
+@media (max-width: 740px){
+    .product__text--heading{
+        width: auto;
+        font-size: 34px;
+        /* margin: 100px 0 0 0; */
+    }
+    .product__text--rich{
+        background-size: cover;
+        margin-bottom: 30px;
+    }
+}
+
+@media (max-width: 600px){
+    .header__banner--title{
+        font-size: 40px;
+    }
+    .header__banner--text{
+        width: auto;
+    }
+}
+
+@media (max-width: 500px){
+    .product__bucket{
+        width: 100%;
+    }
+    .product__img{
+        width: 100%;
+    }
+}
+
+@media (max-width: 400px){
+    .product__text--rich{
+        background-image: url(../img/mobile.png);
+    }
+}

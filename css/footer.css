@@ -1,0 +1,213 @@
+.footer {
+    background-color: #222222;
+    border: 1px solid black;
+    position: relative;
+  }
+  .footer__container {
+    display: flex;
+    flex-direction: row;
+    /* margin: 80px 120px 0 120px; */
+    padding: 100px 0;
+  }
+  .footer__text--container {
+    width: 100%;
+  }
+  .footer__lists {
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+  }
+  .footer__title {
+    font-family: "Rubik";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 140%;
+    text-transform: uppercase;
+    color: #ffffff;
+    margin-bottom: 1.6rem;
+  }
+  .footer__paragraph {
+    font-family: "Rubik";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 160%;
+    width: 90%;
+    color: #b7b7b7;
+    margin-bottom: 2.4rem;
+  }
+  .footer__input .footer__arrow-icon {
+    position: absolute;
+    padding-right: 24px;
+  }
+  
+  .footer__input {
+    width: 80%;
+    margin-bottom: 10px;
+    height: 60px;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+  }
+  .footer__arrow-icon {
+    min-width: 24px;
+    cursor: pointer;
+  }
+  
+  .footer__input--field {
+    width: 100%;
+    height: 3rem;
+    border-radius: 3rem;
+    font-size: 16px;
+    padding: 0 24px;
+    text-align: start;
+    color: #ffffff;
+    justify-content: center;
+    background-color: transparent;
+    border: 1px solid #b7b7b7;
+  }
+  .footer__icons {
+    margin-top: 26px;
+    cursor: pointer;
+    display: flex;
+  }
+  .footer__icon {
+    width: 2.8rem;
+    height: 2.8rem;
+    border-radius: 2.4rem;
+    background-color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 1.6rem;
+  }
+  .footer__icon--item {
+    width: 16px;
+    height: 16px;
+  }
+  .footer__comments {
+    display: flex;
+    flex-direction: row;
+    margin: 0 0 85px 0;
+  }
+  .comment__row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .comment__policy {
+    display: flex;
+  }
+  .comment__logo {
+    font-family: var(--text-bold-font-family);
+    font-style: normal;
+    font-weight: 600;
+    font-size: var(--text-mobile-font-size);
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    margin-right: 18px;
+    color: var(--color);
+  }
+  .comment__expire-date {
+    font-family: var(--text-font-family);
+    font-style: normal;
+    font-weight: 500;
+    font-size: var(--text-font-size);
+    color: rgb(192, 191, 191);
+    margin-right: 23px;
+  }
+  .comment__privacy {
+    font-family: "Rubik";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 160%;
+    color: #ffffff;
+    margin-right: 15px;
+    cursor: pointer;
+  }
+  .footer__list {
+    list-style: none;
+  }
+  .footer__heading {
+    font-family: "Rubik";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 140%;
+    text-transform: uppercase;
+    color: #ffffff;
+    margin-bottom: 20px;
+  }
+  .footer__item {
+    font-family: "Rubik";
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 160%;
+    color: #b7b7b7;
+    margin-bottom: 15px;
+    cursor: pointer;
+  }
+  .message__position {
+    position: fixed;
+    cursor: pointer;
+    bottom: 2rem;
+    right: 2rem;
+  }
+  @media (max-width: 992px) {
+    .footer {
+      height: auto;
+    }
+    .footer__container {
+      display: flex;
+      flex-direction: column;
+      margin: 30px 15px;
+    }
+    .footer__title {
+      font-size: 24px;
+    }
+    .footer__comments {
+      margin: 57px 0 20px 15px;
+      display: flex;
+      flex-direction: column;
+    }
+    .comment__row {
+      margin: 5px 0;
+    }
+    .footer__input {
+      width: 100%;
+    }
+    .footer__heading {
+      margin-top: 26px;
+    }
+  }
+  @media (max-width: 768px) {
+    .footer__lists {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+    }
+    .footer__list {
+      margin: 15px 0;
+    }
+    .comment__row {
+      flex-direction: column;
+    }
+    .message__position {
+      bottom: 1rem;
+      right: 1rem;
+      width: 4rem;
+    }
+  }
+  @media(max-width: 592px) {
+    .comment__policy {
+      flex-direction: column;
+    }
+    .message__position{
+        right: 1rem;
+    }
+  }
+  
