@@ -192,7 +192,7 @@ const data = [
 let num = 17;
 let products = '';
 
-function loadMore(){
+function renderProductsToDOM(){
     data.map(({id, label, img, cta, detail, price}) => {
         products += id <= num ? `<div key=${id} class=${(id == 7) ? "product__text--rich" : "product__bucket"}>
         <div class=${(id == 7) ? '' : "product__img--wrapper"}>
@@ -209,10 +209,10 @@ function loadMore(){
 
 productBtn.addEventListener('click', async() => {
     num = await data.length - num
-    loadMore();
+    renderProductsToDOM();
     product.innerHTML = products;
 })
 
-loadMore();
+renderProductsToDOM();
 
 product.innerHTML = products;
