@@ -1,7 +1,7 @@
 .header__banner{
     width: 100%;
     max-width: 100%;
-    height: 100vh;
+    height: 82vh;
     background-image: url('../img/plpBg.png');
     background-position: center;
     background-size: cover;
@@ -152,21 +152,15 @@
     cursor: pointer;
 }
 
-@media (max-width: 1290px){
-    .product__text--rich{
-        margin-bottom: 30px;
-    }
+@media (max-width: 1322px){
+
     .product__text--rich{
         margin: 0%;
         width: 100%;
         background-size: cover;
-    }
-}
-/* @media (max-width: 1000px){
-    .product__text--rich{
         margin-bottom: 30px;
     }
-} */
+}
 
 @media (max-width: 900px){
     .header__banner--title{
@@ -185,6 +179,12 @@
     .product__bucket{
         margin: auto;
     }
+    .product__text--rich{
+        width: 380px;
+        margin: auto;
+        background-image: url(../img/mobile.png);
+        margin-bottom: 30px;
+    }
 }
 
 @media (max-width: 740px){
@@ -192,10 +192,6 @@
         width: auto;
         font-size: 34px;
         /* margin: 100px 0 0 0; */
-    }
-    .product__text--rich{
-        background-size: cover;
-        margin-bottom: 30px;
     }
 }
 
@@ -218,7 +214,10 @@
 }
 
 @media (max-width: 400px){
-    .product__text--rich{
-        background-image: url(../img/mobile.png);
+    .product__text--heading{
+        font-size: 28px;
+    }
+    .product__image{
+        width: 100%;
     }
 }

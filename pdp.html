@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PDP</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/footer.css">
+    <link rel="stylesheet" href="./css/pdp.css">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <!-- Script -->
+    <script src="./js/pdp.js" defer></script>
+</head>
+<body>
+<!-- Header -->
+<header class="pdp__header">
+    <div class="container">
+        <p class="header__text">Free Shipping for all orders over $100</p>
+        <nav class="header__navbar">
+            <ul class="header__navabr header__navbar--menu">
+                <li class="header__navbar--item">
+                    <a class="header__navbar--link" href="./index.html">Shop</a>
+                </li>
+                <li class="header__navbar--item">
+                    <a class="header__navbar--link" href="./plp.html">About</a>
+                </li>
+                <li class="header__navbar--item">
+                    <a class="header__navbar--link" href="#">Suncare 101</a>
+                </li>
+            </ul>
+            <a href="#" class="header__additional--link">Menu</a>
+            <a class="header__navbar--logo" href="#">Cream Shop</a>
+            <ul class="header__navabr header__navbar--menu">
+                <li class="header__navbar--item">
+                    <a class="header__navbar--link" href="#">Account</a>
+                </li>
+                <li class="header__navbar--item">
+                    <a class="header__navbar--link" href="#">Search</a>
+                </li>
+                <li class="header__navbar--item">
+                    <a class="header__navbar--link" href="#">Cart (3)</a>
+                </li>
+            </ul>
+            <a href="#" class="header__additional--link">Cart (3)</a>
+        </nav>
+
+        <ul class="header__router">
+           <li class="router__item">
+            <a href="#" class="router__link">Home</a>
+           </li> 
+           <li class="router__item">
+            <a href="#" class="router__link">Best Seller</a>
+           </li> 
+           <li class="router__item">
+            <a href="#" class="router__link router__link--hidden">Universal Mineral Face Lotion SPF55</a>
+           </li> 
+        </ul>
+    </div>
+</header>
+
+<div class="card">
+    <div class="container">
+        <div class="card__row">
+            <div class="card__div">
+                <div class="card__wrapper">
+                    <div class="card__item">
+                        <img src="./img/productPhoto.png" width="85px" onclick="myFunction(this);" alt="">
+                    </div>
+                    <div class="card__item">
+                        <img src="./img/productPhoto.png" width="85px" onclick="myFunction(this);" alt="">
+                    </div>
+                    <div class="card__item">
+                        <img src="./img/mobile.png" class="card__img" alt="" onclick="myFunction(this);">
+                    </div>
+                    <div class="card__item">
+                        <img src="./img/girl.png" class="card__img" alt="" onclick="myFunction(this);">
+                    </div>
+                    <div class="card__item">
+                        <img src="./img/autem.png" class="card__img" alt="" onclick="myFunction(this);">
+                    </div>
+                </div>
+                <div class="card__shower">
+                    <img class="card__image" src="./img/productPhoto.png" id="expandImg" alt="">
+                </div>
+            </div>
+            <div class="card__second--wrapper">
+                <h4 class="card__title">Niche Beauty CCC Cream – Niche Beauty</h4>
+                <p class="card__price">$28.00</p>
+                <p class="card__description"><b>The original, weightless, scentless sunscreen with SPF 55 that leaves a shinny finish.</b> Formulated with the most sensitive and vulnerable in mind, with a custom blend of natural, gentle and hydrating island ingredients mixed with the most effective skincare-grade actives.</p>
+                <p class="card__size">Size</p>
+                <span class="card__size--span">50ml</span>
+                <ul class="card__size--items">
+                    <li class="card__size--item">1.7 fl oz</li>
+                    <li class="card__size--item">2.5 fl oz</li>
+                    <li class="card__size--item"><del>3.4 fl oz</del></li>
+                </ul>
+                <form class="card__form">
+                    <input type="radio" id="radio__btn" name="choose" class="card__form--button" checked>
+                    <label for="radio__btn" class="card__form--label">$28.00 One time purchase</label>
+                    <br>
+                    <input type="radio" id="radio__btn--second" name="choose" class="card__form--button">
+                    <label for="radio__btn--second" class="card__form--label">$25.99 Subscribe and save.</label>
+                </form>
+                <div class="card__cta">
+                    <div class="card__cta--chooser">
+                        <button class="card__cta--decrease">-</button>
+                        <p class="card__cta--amount">1</p>
+                        <button class="card__cta--increase">+</button>
+                    </div>
+                    <div class="card__cta--button">
+                        Add to cart - $28.00
+                    </div>
+                </div>
+                <p class="card__subscribe">Starting at $20/mo with 
+                    <img src="./svg/affirm.svg" alt="">        
+                    <a href="#" class="card__subscribe--link">Learn more</a>
+                </p>
+                <div class="card__navigations">
+                    <div class="card__navigation card__navigation--first">
+                        <div class="card__navigation--div">
+                            <p class="card__navigation--title">Use Instruction</p>
+                            <p class="card__navigation--show card__navigation--firstShow">+</p>
+                        </div>
+                        <p class="card__navigation--hidden">Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi similique ullam eligendi quasi?</p>
+                    </div>
+                    <div class="card__navigation card__navigation--second">
+                        <div class="card__navigation--div">
+                            <p class="card__navigation--title">Ingredients</p>
+                            <p class="card__navigation--show card__navigation--secondShow">+</p>
+                        </div>
+                        <p class="card__navigation--secondHidden">Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi similique ullam eligendi quasi?</p>
+                    </div>
+                    <div class="card__navigation card__navigation--third">
+                        <div class="card__navigation--div">
+                            <p class="card__navigation--title">Shipping and Returns</p>
+                            <p class="card__navigation--show card__navigation--thirdShow">+</p>
+                        </div>
+                        <p class="card__navigation--thirdHidden">Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi similique ullam eligendi quasi?</p>
+                    </div>
+                    <div class="card__navigation card__navigation--fourth">
+                        <div class="card__navigation--div">
+                            <p class="card__navigation--title">How to Recycle</p>
+                            <p class="card__navigation--show card__navigation--fourthShow">+</p>
+                        </div>
+                        <p class="card__navigation--fourthHidden">Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi similique ullam eligendi quasi?</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="ingredients">
+    <div class="containerd">
+        <div class="ingredient__row">
+            <div class="ingredient__box">
+                <h3 class="ingredient__heading">Ingredients</h3>
+                <p class="ingredient__description">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.</p>
+                <ul class="ingredient__list">
+                    <li class="ingredient__item">
+                        <img class="ingredient__image" src="./svg/nectar.svg" alt="nectar">
+                        <p class="ingredient__title">Hydrating Nectar</p>
+                    </li>
+                    <li class="ingredient__item">
+                        <img class="ingredient__image" src="./svg/cells.svg" alt="cells">
+                        <p class="ingredient__title">Aloe steam cells</p>
+                    </li>
+                    <li class="ingredient__item">
+                        <img class="ingredient__image" src="./svg/seamoss.svg" alt="seamoss">
+                        <p class="ingredient__title">Seamoss</p>
+                    </li>
+                    <li class="ingredient__item">
+                        <img class="ingredient__image" src="./svg/niacinamide.svg" alt="Niacinamide">
+                        <p class="ingredient__title">Niacinamide</p>
+                    </li>
+                    <li class="ingredient__item">
+                        <img class="ingredient__image" src="./svg/oil.svg" alt="oil">
+                        <p class="ingredient__title">Almond oil</p>
+                    </li>
+                    <li class="ingredient__item">
+                        <img class="ingredient__image" src="./svg/grape.svg" alt="grape">
+                        <p class="ingredient__title">Grapeseed oil</p>
+                    </li>
+                </ul>
+                <a href="#" class="ingredient__link">Full Ingredient glossary</a>
+            </div>
+            <div class="ingredient__boxf">
+                <img src="./img/ingredient-girl.png" alt="ingredient-girl">
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+    <!-- Footer -->
+<footer class="footer">
+    <div class="footer__row container">
+      <div class="footer__container">
+        <div class="footer__text--container">
+          <h4 class="footer__title">Join the club</h4>
+          <p class="footer__paragraph">
+            Keep up with our new releases, beauty tips and what Winnie’s
+            been up to.
+          </p>
+          <div class="footer__input">
+            <img
+              src="../svg/arrow.svg"
+              class="footer__arrow-icon"
+              alt=""
+            />
+            <input
+              class="footer__input--field"
+              placeholder="Email Address"
+              type="email"
+            />
+          </div>
+          <div class="footer__icons">
+            <div class="footer__icon">
+              <img
+                class="footer__icon--item"
+                src="../svg/facebook.svg"
+                alt=""
+              />
+            </div>
+            <div class="footer__icon">
+              <img
+                class="footer__icon--item"
+                src="../svg/twitter.svg"
+                alt=""
+              />
+            </div>
+            <div class="footer__icon">
+              <img
+                class="footer__icon--item"
+                src="../svg/Instagram.svg"
+                alt=""
+              />
+            </div>
+          </div>
+        </div>
+        <div class="footer__lists">
+          <ul class="footer__list">
+            <li><h3 class="footer__heading">Shop</h3></li>
+            <li class="footer__item">Shop All</li>
+            <li class="footer__item">Best Sellers</li>
+            <li class="footer__item">Universal Mineral</li>
+            <li class="footer__item">Isie Glow to Isle</li>
+            <li class="footer__item">Deepwater</li>
+            <li class="footer__item">Winne Selects</li>
+          </ul>
+          <ul class="footer__list">
+            <li><h3 class="footer__heading">Learn</h3></li>
+            <li class="footer__item">About Us</li>
+            <li class="footer__item">ingredient Glossary</li>
+            <li class="footer__item">Sun Care 101</li>
+            <li class="footer__item">Our Journey</li>
+          </ul>
+          <ul class="footer__list">
+            <li><h3 class="footer__heading">Customer</h3></li>
+            <li class="footer__item">Contact Us</li>
+            <li class="footer__item">Help/FAQ</li>
+            <li class="footer__item">My Account</li>
+            <li class="footer__item">Shipping and Return</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer__comments">
+        <div class="comment__row">
+          <p class="comment__privacy">@ 2021 Cream Shop</p>
+          <div class="comment__policy">
+            <p class="comment__privacy">Terms and conditions</p>
+            <p class="comment__privacy">Privacy Policy</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="message__position">
+      <img class="message__icon" src="../svg/message.svg" alt="" />
+    </div>
+  </footer>
+
+</body>
+</html>
